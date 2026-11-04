@@ -1066,6 +1066,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822162219}
   m_CullTransparentMesh: 1
+--- !u!1 &914815973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914815974}
+  m_Layer: 0
+  m_Name: SomSustos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &914815974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914815973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1850912259}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966971812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,6 +1962,7 @@ Transform:
   - {fileID: 1421860876}
   - {fileID: 607966255}
   - {fileID: 139029344}
+  - {fileID: 914815974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1850912260
@@ -1960,6 +1992,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b5c191402d4cf4f8fc90d5aaa80110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  stalker: {fileID: 0}
+  cam: {fileID: 0}
+  anguloVisao: 50
+  distanciaMaxima: 25
+  distancia: 0
+  stalkerVisivel: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

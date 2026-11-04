@@ -10,6 +10,7 @@ public class DetectorStalker : MonoBehaviour
 
     public float distancia;
     public bool stalkerVisivel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,7 +23,7 @@ public class DetectorStalker : MonoBehaviour
         Vector3 diracao = stalker.position - cam.transform.position;
         Vector3 noChao = new Vector3(stalker.position.x, transform.position.y, stalker.position.z);
         distancia = Vector3.Distance(transform.position, noChao);
-        float angulo = Vector3.Angle(cam.transform.foward, diracao);
+        float angulo = Vector3.Angle(cam.transform.forward, diracao);
         stalkerVisivel = angulo <= anguloVisao && distancia <= distanciaMaxima;
         
     }
